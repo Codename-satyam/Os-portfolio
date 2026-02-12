@@ -6,6 +6,7 @@ import folder from '../../assets/icons/folder.png';
 import resume from '../../assets/icons/resume.png';
 import mail from '../../assets/icons/mail.png';
 import explorer from '../../assets/icons/explorer.png';
+import documents from '../../assets/icons/folder.png';
 
 
 function StartMenu({ isOpen, onClose, openWindow }) {
@@ -165,6 +166,16 @@ function StartMenu({ isOpen, onClose, openWindow }) {
                                 <img src={folder} alt="Picture Viewer" className="item-icon" />
                                 <span>Windows Picture Viewer</span>
                             </motion.div>
+                            <motion.div 
+                                className="start-menu-item" 
+                                onClick={() => handleItemClick('documents', 'My Documents', documents)}
+                                variants={itemVariants}
+                                whileHover={{ x: 5, backgroundColor: "rgba(51, 102, 204, 0.15)" }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                <img src={documents} alt="My Documents" className="item-icon" />
+                                <span>My Documents</span>
+                            </motion.div>
                         </div>
 
                         <div className="menu-separator"></div>
@@ -181,7 +192,7 @@ function StartMenu({ isOpen, onClose, openWindow }) {
                     </div>
 
                     <div className="start-menu-right">
-                        <div className="start-menu-item" onClick={onClose}>
+                        <div className="start-menu-item" onClick={() => handleItemClick('documents', 'My Documents', documents)}>
                             <span>📁 My Documents</span>
                         </div>
                         <div className="start-menu-item" onClick={() => handleItemClick('pictures', 'Windows Picture Viewer', folder)}>

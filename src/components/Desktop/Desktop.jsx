@@ -10,6 +10,7 @@ import mail from "../../assets/icons/mail.png";
 import explorer from "../../assets/icons/explorer.png";
 import music from "../../assets/icons/music.png";
 import pictures from "../../assets/icons/pic.png";
+import documents from "../../assets/icons/folder.png";
 
 function Desktop({ openWindow }) {
 
@@ -55,6 +56,11 @@ function Desktop({ openWindow }) {
                 icon={pictures} 
                 label="My Pictures"
                 onClick={() => openWindow('pictures', 'Windows Picture Viewer', pictures, getWindowContent('pictures'))}
+            />
+            <Icon 
+                icon={documents} 
+                label="My Documents"
+                onClick={() => openWindow('documents', 'My Documents', documents, getWindowContent('documents'))}
             />
         </motion.div>
     );

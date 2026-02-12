@@ -16,7 +16,8 @@ function Window({
     onMinimize, 
     onMaximize, 
     onFocus,
-    onDragEnd 
+    onDragEnd,
+    onOpenWindow
 }) {
     const [isDragging, setIsDragging] = useState(false);
     const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
@@ -145,7 +146,7 @@ function Window({
                 </div>
             </div>
             <div className="window-content">
-                {content}
+                {typeof content === 'function' ? content({ onOpenWindow }) : content}
             </div>
         </motion.div>
     );

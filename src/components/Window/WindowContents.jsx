@@ -1,33 +1,15 @@
 import folder from '../../assets/icons/folder.png';
 import Music from '../Misc/music/music';
 import Pictures from '../Misc/pictures/pictures';
+import Documents from '../Misc/documents/documents';
+import MyComputer from '../Misc/mycomputer/MyComputer';
 import music from '../../assets/icons/music.png';
 import pic from '../../assets/icons/pic.png';
 
 export const getWindowContent = (appId) => {
     const appContents = {
-        myComputer: (
-            <div>
-                <h2>My Computer</h2>
-                <div className="folder-view">
-                    <div className="folder-item">
-                        <img src={folder} alt="Documents" />
-                        <span>My Documents</span>
-                    </div>
-                    <div className="folder-item">
-                        <img src={pic} alt="Pictures" />
-                        <span>My Pictures</span>
-                    </div>
-                    <div className="folder-item">
-                        <img src={music} alt="Music" />
-                        <span>My Music</span>
-                    </div>
-                </div>
-                <h3>System Information</h3>
-                <p><strong>OS:</strong> Windows XP Professional</p>
-                <p><strong>Processor:</strong> Intel Core i7</p>
-                <p><strong>RAM:</strong> 8.00 GB</p>
-            </div>
+        myComputer: ({ onOpenWindow }) => (
+            <MyComputer onOpenWindow={onOpenWindow} />
         ),
         projects: (
             <div>
@@ -215,6 +197,11 @@ export const getWindowContent = (appId) => {
             <div>
                 <Pictures />
             </div>
+        ),
+        documents: (
+            <div style={{ width: '100%', height: '100%' }}>
+                <Documents />
+            </div>
         )
     };
 
@@ -249,5 +236,9 @@ export const appConfig = {
     pictures: {
         id: 'pictures',
         title: 'Windows Picture Viewer'
+    },
+    documents: {
+        id: 'documents',
+        title: 'My Documents'
     }
 };

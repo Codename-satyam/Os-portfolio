@@ -4,6 +4,7 @@ import Homepage from './components/Desktop/Desktop.jsx';
 import Taskbar from './components/Taskbar/Taskbar.jsx';
 import Window from './components/Window/Window.jsx';
 import StartUp from './components/StartUp/StartUp.jsx';
+import { getWindowContent } from './components/Window/WindowContents.jsx';
 
 
 function App() {
@@ -89,6 +90,7 @@ function App() {
                 onMaximize={toggleMaximize}
                 onFocus={focusWindow}
                 onDragEnd={handleDragEnd}
+                onOpenWindow={(appId, title, icon) => openWindow(appId, title, icon, getWindowContent(appId))}
               />
             ))}
           </AnimatePresence>
