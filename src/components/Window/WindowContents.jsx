@@ -3,6 +3,7 @@ import Music from '../Misc/music/music';
 import Pictures from '../Misc/pictures/pictures';
 import Documents from '../Misc/documents/documents';
 import MyComputer from '../Misc/mycomputer/MyComputer';
+import Projects from '../Misc/Projects/Projects';
 import music from '../../assets/icons/music.png';
 import pic from '../../assets/icons/pic.png';
 
@@ -11,36 +12,7 @@ export const getWindowContent = (appId) => {
         myComputer: ({ onOpenWindow }) => (
             <MyComputer onOpenWindow={onOpenWindow} />
         ),
-        projects: (
-            <div>
-                <h2>My Projects</h2>
-                <div className="folder-view">
-                    <div className="folder-item">
-                        <img src={folder} alt="Project 1" />
-                        <span>E-Commerce Site</span>
-                    </div>
-                    <div className="folder-item">
-                        <img src={folder} alt="Project 2" />
-                        <span>Task Manager App</span>
-                    </div>
-                    <div className="folder-item">
-                        <img src={folder} alt="Project 3" />
-                        <span>Weather Dashboard</span>
-                    </div>
-                    <div className="folder-item">
-                        <img src={folder} alt="Project 4" />
-                        <span>Portfolio Website</span>
-                    </div>
-                </div>
-                <h3>Technologies Used</h3>
-                <ul>
-                    <li>React.js & Next.js</li>
-                    <li>Node.js & Express</li>
-                    <li>MongoDB & PostgreSQL</li>
-                    <li>HTML5, CSS3, JavaScript</li>
-                </ul>
-            </div>
-        ),
+        projects: <Projects />,
         resume: (
             <div>
                 <h2>Resume.txt</h2>
@@ -182,6 +154,7 @@ export const getWindowContent = (appId) => {
                 explorer: (
                 <div style={{ width: '100%', height: '100%' }}>
                     <iframe 
+                        title="Portfolio Website"
                         src="https://my-portfolio-pi-kohl-66.vercel.app/" 
                         frameBorder="0"
                         style={{ width: '100%', height: '100%', border: 'none' }}
