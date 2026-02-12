@@ -1,11 +1,8 @@
-import folder from '../../assets/icons/folder.png';
 import Music from '../Misc/music/music';
 import Pictures from '../Misc/pictures/pictures';
 import Documents from '../Misc/documents/documents';
 import MyComputer from '../Misc/mycomputer/MyComputer';
 import Projects from '../Misc/Projects/Projects';
-import music from '../../assets/icons/music.png';
-import pic from '../../assets/icons/pic.png';
 
 export const getWindowContent = (appId) => {
     const appContents = {
@@ -27,8 +24,8 @@ export const getWindowContent = (appId) => {
                 <h3>Contact Information</h3>
                 <p>Email: satyamanand643@gmail.com</p>
                 <p>Mobile: +91 8427861995</p>
-                <p>LinkedIn: linkedin.com/in/satyam-anand33</p>
-                <p>GitHub: github.com/Codename-satyam</p>
+                <p>LinkedIn: satyam-anand33</p>
+                <p>GitHub: Codename-satyam</p>
 
                 <h3>Skills</h3>
                 <ul>
@@ -142,13 +139,12 @@ export const getWindowContent = (appId) => {
                     <h3>Social Media</h3>
                     <p><a href="https://www.linkedin.com/in/satyam-anand33/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                     <p><a href="https://github.com/Codename-satyam" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                    <p><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></p>
 
                     <h3>Location</h3>
-                    <p>City, State, Country</p>
+                    <p>Jalandhar, Punjab, India</p>
 
                     <h3>Availability</h3>
-                    <p>Available for freelance projects and full-time opportunities.</p>
+                    <p>Available for freelance projects and full-time opportunities. Would love to be a part of a dynamic team where I can contribute and grow.</p>
                 </div>
                 ),
                 explorer: (

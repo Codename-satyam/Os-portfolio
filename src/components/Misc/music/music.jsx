@@ -90,7 +90,7 @@ const Music = () => {
         if (audioRef.current && isPlaying) {
             audioRef.current.play().catch(err => console.log('Playback prevented:', err));
         }
-    }, [currentTrack]);
+    }, [currentTrack, isPlaying]);
 
     const formatTime = (time) => {
         if (isNaN(time)) return '0:00';

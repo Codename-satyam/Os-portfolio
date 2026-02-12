@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './Window.scss';
 
 function Window({ 
@@ -40,32 +40,29 @@ function Window({
         });
     };
 
-    const handleMouseMove = (e) => {
+    useEffect(() => {
         if (!isDragging) return;
-        
-        const newX = e.clientX - dragOffset.x;
-        const newY = Math.max(0, e.clientY - dragOffset.y);
-        
-        setCurrentPosition({ x: newX, y: newY });
-    };
 
-    const handleMouseUp = () => {
-        if (isDragging) {
+        const handleMouseMove = (e) => {
+            const newX = e.clientX - dragOffset.x;
+            const newY = Math.max(0, e.clientY - dragOffset.y);
+            
+            setCurrentPosition({ x: newX, y: newY });
+        };
+
+        const handleMouseUp = () => {
             setIsDragging(false);
             onDragEnd(id, currentPosition);
-        }
-    };
+        };
 
-    useEffect(() => {
-        if (isDragging) {
-            document.addEventListener('mousemove', handleMouseMove);
-            document.addEventListener('mouseup', handleMouseUp);
-            return () => {
-                document.removeEventListener('mousemove', handleMouseMove);
-                document.removeEventListener('mouseup', handleMouseUp);
-            };
-        }
-    }, [isDragging, dragOffset, currentPosition]);
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
+        
+        return () => {
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
+        };
+    }, [isDragging, dragOffset, currentPosition, id, onDragEnd]);
 
     if (isMinimized) return null;
 

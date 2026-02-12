@@ -163,7 +163,7 @@ function StartMenu({ isOpen, onClose, openWindow }) {
                                 whileHover={{ x: 5, backgroundColor: "rgba(51, 102, 204, 0.15)" }}
                                 whileTap={{ scale: 0.98 }}
                             >
-                                <img src={folder} alt="Picture Viewer" className="item-icon" />
+                                <img src={folder} alt="" className="item-icon" />
                                 <span>Windows Picture Viewer</span>
                             </motion.div>
                             <motion.div 
