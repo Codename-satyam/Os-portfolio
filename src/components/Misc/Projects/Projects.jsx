@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import './Projects.scss';
 
 // Import project images
-import JigyasaImg1 from "../../../assets/projects/Jigyasa/images/1 (1).png"
-import JigyasaImg2 from '../../../assets/projects/Jigyasa/images/1 (2).png';
-import JigyasaImg3 from '../../../assets/projects/Jigyasa/images/1 (3).png';
-import JigyasaImg4 from '../../../assets/projects/Jigyasa/images/1 (4).png';
-import JigyasaImg5 from '../../../assets/projects/Jigyasa/images/1 (5).png';
+import JigyasaImg1 from "../../../assets/projects/Jigyasa/images/1 (1).webp"
+import JigyasaImg2 from '../../../assets/projects/Jigyasa/images/1 (2).webp';
+import JigyasaImg3 from '../../../assets/projects/Jigyasa/images/1 (3).webp';
+import JigyasaImg4 from '../../../assets/projects/Jigyasa/images/1 (4).webp';
+import JigyasaImg5 from '../../../assets/projects/Jigyasa/images/1 (5).webp';
 
-import CookBookImg1 from '../../../assets/projects/CookBook/images/1.png';
-import CookBookImg2 from '../../../assets/projects/CookBook/images/2.png';
-import CookBookImg3 from '../../../assets/projects/CookBook/images/3.png';
+import CookBookImg1 from '../../../assets/projects/CookBook/images/1.webp';
+import CookBookImg2 from '../../../assets/projects/CookBook/images/2.webp';
+import CookBookImg3 from '../../../assets/projects/CookBook/images/3.webp';
 
-import TemplateGenImg1 from '../../../assets/projects/TemplateGenerator/images/1 (1).png';
-import TemplateGenImg2 from '../../../assets/projects/TemplateGenerator/images/1 (2).png';
-import TemplateGenImg3 from '../../../assets/projects/TemplateGenerator/images/1 (3).png';
+import TemplateGenImg1 from '../../../assets/projects/TemplateGenerator/images/1 (1).webp';
+import TemplateGenImg2 from '../../../assets/projects/TemplateGenerator/images/1 (2).webp';
+import TemplateGenImg3 from '../../../assets/projects/TemplateGenerator/images/1 (3).webp';
 
 const projectData = {
   jigyasa: {
