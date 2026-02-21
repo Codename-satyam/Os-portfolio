@@ -1,71 +1,47 @@
-# Getting Started with Create React App
+🖥️ OS Portfolio — Windows XP Inspired Web Experience
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully interactive Windows XP–themed portfolio built using React.
 
-## Available Scripts
+This project recreates the nostalgic Windows XP operating system inside the browser — complete with login screen, draggable windows, Start menu, media player, and file explorer — all functioning as a modern web portfolio.
 
-In the project directory, you can run:
+✨ Features
 
-### `npm start`
+🟦 Windows XP Login Screen
+🟩 Functional Start Menu
+🪟 Draggable & Focusable Windows
+📁 My Documents Folder with PDF Viewer
+🌐 Internet Explorer Window (loads external portfolio)
+🎵 Windows Media Player–Inspired Music Player
+🕒 Live Taskbar Clock & Date
+🎨 XP-style UI, gradients, fonts, and layout
+⚡ Smooth animations and transitions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🧠 Why I Built This
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Instead of creating a traditional portfolio, I wanted to build an interactive experience that demonstrates:
 
-### `npm test`
+Component-based architecture in React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Custom window management system
 
-### `npm run build`
+Dynamic state handling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+File & media integration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+UI recreation from real-world software
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment debugging & optimization
 
-### `npm run eject`
+This project combines nostalgia + engineering + UI design.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🛠 Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+SCSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+JavaScript (ES6+)
 
-## Learn More
+HTML5 / CSS3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Os-portfolio" 
+Vercel (Deployment)
